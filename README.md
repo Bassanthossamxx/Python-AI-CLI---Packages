@@ -1,2 +1,2 @@
-# learn-python-tools
-git add > stage changes
+# Python CLI & Packages
+#### this file to manage my tasks in my learning phase for python CLI & Packages

@@ -20,7 +20,7 @@ Build a CLI tool `ai-commit-gen` that:
 * [x] Learn basics of gitpython
 * [x] Get staged files
 * [x] Get diffs of staged changes → `repo.git.diff('--cached')`
-* [ ] Write a helper function `get_staged_diff()` returning diff as text
+* [x] Write a helper function `get_staged_diff()` returning diff as text
 
 **Reference:**
 

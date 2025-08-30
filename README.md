@@ -85,7 +85,7 @@ def generate_fake_commit_message(diff: str) -> str:
 ```
 
 **Reference:**
-
+* Eqraa Guide for commit message rules: [https://eqraatech.com/git-commit-message-cheatsheet/](Eqraa doc for commit messages)
 * Conventional Commits Spec: [https://www.conventionalcommits.org/en/v1.0.0/](https://www.conventionalcommits.org/en/v1.0.0/)
 * Git Commit Best Practices: [https://cbea.ms/git-commit/](https://cbea.ms/git-commit/)
 

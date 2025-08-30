@@ -38,8 +38,6 @@ def get_staged_diffs(repo_path="."):
 
     return diffs
 
-
-# ---- test it ----
 staged_diffs = get_staged_diffs()
 
 if not staged_diffs:

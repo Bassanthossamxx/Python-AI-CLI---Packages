@@ -1,3 +1,4 @@
+#------------------------GitPython------------------------
 #Task 1 in GitPython:
 """
 from git import Repo
@@ -61,4 +62,27 @@ else:
     for file, diff in staged_diffs.items():
         print(f"{file}: {diff[:200]}...\n")  # only first 200 chars
 """
+#####################################################
+#------------------------CLI Args "sys.argv"------------------------
+#Task 1 in sys.argv:
+# import sys
+# length = len(sys.argv)
+# arr = list(sys.argv)
+# for i in range(length):
+#     print(f"Arg {i}: {arr[i]}")
+######################################################
+#Task 2 & 3 & 4 in sys.argv:
+import sys
+length = len(sys.argv)
+print(f"Length of sys.argv: {length}")
+if length <2 :
+    print("Please provide an valid command.""")
+elif length >=4 and sys.argv[1] == "gen" and sys.argv[2] == "-m" :
+        commit_message = sys.argv[3:]
+        print(f"Commit message: {commit_message}")
+    # filename gen -m "commit message"
+elif length ==2 and sys.argv[1] == "diff":
+    print("showing diff of staged files...")
+else:
+    print("Invalid command. Usage: filename gen -m \"commit message\"")
 

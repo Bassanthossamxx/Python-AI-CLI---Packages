@@ -1,27 +1,40 @@
 #Task 1 in GitPython:
-# from git import Repo
-# repo = Repo(".")
-# branch = repo.active_branch
-# print(branch)
-# Task 2 in GitPython:
-# from git import Repo
-# repo = Repo(".")
-# staged_files =repo.git.diff("--staged" , "--name-only")
-# print("Staged files :\n",staged_files)
-# Task 3 in GitPython:
-# from git import Repo
-# repo = Repo(".")
-# staged_diffs =repo.git.diff("--staged")
-# print("Staged files :\n",staged_diffs)
-# Task 4 in GitPython:
-# from git import Repo
-# repo = Repo(".")
-# file_names = repo.git.diff("--staged" , "--name-only")
-# for f in file_names.split("\n"):
-#     print(f"------------------------------- {f}-----------------------------------\n")
-#     staged_diffs =repo.git.diff("--staged", f)
-#     print(staged_diffs)
+"""
+from git import Repo
+repo = Repo(".")
+branch = repo.active_branch
+print(branch)
+"""
+#################################################
+#Task 2 in GitPython:
+"""
+from git import Repo
+repo = Repo(".")
+staged_files =repo.git.diff("--staged" , "--name-only")
+print("Staged files :\n",staged_files)
+"""
+#################################################
+#Task 3 in GitPython:
+"""
+from git import Repo
+repo = Repo(".")
+staged_diffs =repo.git.diff("--staged")
+print("Staged files :\n",staged_diffs)
+"""
+#################################################
+#Task 4 in GitPython:
+"""
+from git import Repo
+repo = Repo(".")
+file_names = repo.git.diff("--staged" , "--name-only")
+for f in file_names.split("\n"):
+    print(f"------------------------------- {f}-----------------------------------\n")
+    staged_diffs =repo.git.diff("--staged", f)
+    print(staged_diffs)
+"""
+#####################################################
 #Task 5 in GitPython:
+"""
 from git import Repo
 
 def get_staged_diffs(repo_path="."):
@@ -47,4 +60,5 @@ else:
     print("\n--- Preview of diffs ---\n")
     for file, diff in staged_diffs.items():
         print(f"{file}: {diff[:200]}...\n")  # only first 200 chars
+"""
 

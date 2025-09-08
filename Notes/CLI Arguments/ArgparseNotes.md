@@ -214,6 +214,7 @@ args.style == "conventional"
 
 * Add a **positional argument** called `name`.
 * Run `python cli.py Basant` → prints `"Hello, Basant"`.
+### DONE
 
 ---
 
@@ -221,6 +222,7 @@ args.style == "conventional"
 
 * Add `-n` or `--number` flag.
 * Run `python cli.py -n 3` → prints `"You entered: 3"`.
+### DONE
 
 ---
 
@@ -236,6 +238,7 @@ args.style == "conventional"
   python cli.py gen -m "Fix bug"
   python cli.py diff
   ```
+### DONE
 
 ---
 
@@ -247,6 +250,7 @@ args.style == "conventional"
   ```bash
   python cli.py gen --style simple
   ```
+#### DONE
 
 ---
 
@@ -263,9 +267,6 @@ args.style == "conventional"
 * Subcommands make your CLI work like `git`.
 * You get `--help` for free.
 ___
-Perfect, let’s do a **detailed side-by-side comparison of `argparse` vs `sys.argv`** so you can really see the difference. I’ll walk slowly and make sure we break down **what parsing means**.
-
----
 
 ## Comparison: `sys.argv` vs `argparse`
 

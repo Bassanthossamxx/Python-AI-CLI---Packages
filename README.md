@@ -32,7 +32,7 @@ Build a CLI tool `ai-commit-gen` that:
 ### Step 2 – CLI Arguments
 
 * [x] Learn sys.argv basics
-* [ ] Learn argparse → build a CLI with commands:
+* [x] Learn argparse → build a CLI with commands:
 
   * `gen` → generate commit message
   * `diff` → print staged diff
